@@ -8,13 +8,14 @@ const
 	report = new eslint.CLIEngine({
 		useEslintrc: false,
 		envs: [
-			'node','es6'
+			'node',
+			'es6'
 		],
 		rules: conf.rules
 	}).executeOnFiles(files)
 ;
 
-// Shor error report
+// Show error report
 // eslint.CLIEngine.getErrorResults(report.results).forEach((error) => {
 // 	console.log(error.messages);
 // });
