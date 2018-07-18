@@ -3,11 +3,12 @@
   "description": "The eslint config we use at moccu",
   "version": "1.0.0",
   "author": "Moccu GmbH & Co. KG",
-  "license": "Moccu License",
+  "license": "MIT License",
   "repository": "moccu/eslint-config-moccu",
   "engines": {
     "node": ">=0.10.0"
   },
+	"main": "index.js",
   "files": [
     "index.js"
   ],
@@ -37,3 +38,4 @@
   "peerDependencies": {
     "eslint": ">=4.1.1"
   }
+}
