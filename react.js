@@ -5,7 +5,7 @@ module.exports = {
 		'moccu'
 	],
 	rules: {
-		"react/no-unknown-property": [2],
-		"react/display-name": "off"
+		'react/no-unknown-property': [2],
+		'react/display-name': 'off'
 	}
 }
