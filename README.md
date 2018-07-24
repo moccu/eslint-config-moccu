@@ -19,6 +19,14 @@ $ npm install --save-dev eslint-config-moccu
 }
 ```
 
+### React
+
+```js
+{
+  "extends": "moccu/react"
+}
+```
+
 ## License
 
 [MIT](./LICENSE)
