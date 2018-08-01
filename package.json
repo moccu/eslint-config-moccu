@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-moccu",
   "description": "The eslint config we use at moccu",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Moccu GmbH & Co. KG",
   "license": "MIT License",
   "repository": "moccu/eslint-config-moccu",
