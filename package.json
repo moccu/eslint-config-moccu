@@ -12,9 +12,6 @@
     "test": "node test/test.js"
   },
   "main": "index.js",
-  "files": [
-    "index.js"
-  ],
   "keywords": [
     "moccu",
     "code",
