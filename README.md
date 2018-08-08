@@ -45,6 +45,14 @@ rules.
 }
 ```
 
+## Contribute
+
+* Add / Edit rules after agreements with developers at Moccu
+* Run tests using  `npm test`
+* Set new version in [package.json](https://github.com/moccu/eslint-config-moccu/blob/master/package.json)
+* Publish new version on npm using `npm publish --access=public`
+* Add github release and tag including release notes
+
 ## License
 
 [MIT](./LICENSE)
