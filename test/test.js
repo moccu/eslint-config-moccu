@@ -3,18 +3,18 @@
 const
 	assert = require('assert'),
 	chalk = require('chalk'),
+	deepmerge = require('deepmerge'),
 	eslint = require('eslint'),
-	conf = require('../'),
 	files = ['**/*.js'],
-	report = new eslint.CLIEngine({
-		useEslintrc: false,
-		envs: [
-			'node',
-			'es6'
-		],
-		rules: conf.rules
-	}).executeOnFiles(files)
+	config = ['index', 'react'].reduce(
+		(cfg, name) => deepmerge(cfg, require('../' + name)),
+		{
+			useEslintrc: false,
+			envs: ['node', 'es6']
+		}),
+	report = new eslint.CLIEngine(config).executeOnFiles(files);
 ;
+
 
 // Show error report
 eslint.CLIEngine.getErrorResults(report.results).forEach((error) =>

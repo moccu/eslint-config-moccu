@@ -33,7 +33,8 @@
     "hint"
   ],
   "devDependencies": {
-    "chalk": "^2.4.1"
+    "chalk": "^2.4.1",
+    "deepmerge": "^2.1.1"
   },
   "peerDependencies": {
     "eslint": ">=4.1.1"
