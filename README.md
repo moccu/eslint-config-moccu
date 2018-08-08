@@ -14,10 +14,10 @@ $ npm install --save-dev eslint-config-moccu
 
 ```js
 {
-  "extends": "moccu",
-  "rules": {
-    // Additional rules...
-  }
+	"extends": "moccu",
+	"rules": {
+		// Additional rules...
+	}
 }
 ```
 
@@ -25,7 +25,7 @@ $ npm install --save-dev eslint-config-moccu
 
 ```js
 {
-  "extends": "moccu/react"
+	"extends": "moccu"
 }
 ```
 
