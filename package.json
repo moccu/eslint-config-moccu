@@ -3,7 +3,7 @@
   "description": "The eslint config we use at moccu",
   "version": "0.1.0",
   "author": "Moccu GmbH & Co. KG",
-  "license": "MIT License",
+  "license": "MIT",
   "repository": "moccu/eslint-config-moccu",
   "engines": {
     "node": ">=0.10.0"
