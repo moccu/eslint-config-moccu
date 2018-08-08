@@ -7,7 +7,7 @@ The eslint config we use at moccu
 ## Installation
 
 ```
-$ npm install --save-dev eslint-config-moccu
+$ npm install --save-dev @moccu/eslint-config
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ rules.
 ```js
 {
 	"extends": [
-		"moccu"
+		"@moccu/eslint-config"
 	],
 	"rules": {
 		// Additional rules...
@@ -36,8 +36,8 @@ rules.
 ```js
 {
 	"extends": [
-		"moccu",
-		"moccu/react"
+		"@moccu/eslint-config",
+		"@moccu/eslint-config/react"
 	],
 	"rules": {
 		// Additional rules...
