@@ -2,7 +2,7 @@
 
 module.exports = {
 	extends: [
-		'moccu'
+		'plugin:react/recommended'
 	],
 	rules: {
 		'react/no-unknown-property': [2],
