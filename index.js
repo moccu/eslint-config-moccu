@@ -189,6 +189,11 @@ module.exports = {
 		// 'no-return-assign': 'off',
 		'no-return-await': 'error',
 		'no-script-url': 'error',
+		'no-self-assign': [
+			'error', {
+				'props': true
+			}
+		],
 		'no-self-compare': 'error',
 		// 'no-sequences': 'off',
 		// 'no-shadow': 'off',
