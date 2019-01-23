@@ -6,7 +6,7 @@ const
 	deepmerge = require('deepmerge'),
 	eslint = require('eslint'),
 	files = ['**/*.js'],
-	config = ['index', 'react'].reduce(
+	config = ['index', 'react', 'react-proptypes'].reduce(
 		(cfg, name) => deepmerge(cfg, require('../' + name)),
 		{
 			useEslintrc: false,
