@@ -49,32 +49,32 @@ module.exports = {
 		'sort-class-members/sort-class-members': [2,
 			sortClassMemberOrdering(
 				[
-					{name: "[framework-static-properties]", insertAt: "[static-properties]", insertMethod: "after"},
-					{name: "[framework-static-methods]", insertAt: "[static-methods]", insertMethod: "after"},
-					{name: "[framework-lifecycle-methods]", insertAt: "constructor", insertMethod: "after"}
+					{name: '[framework-static-properties]', insertAt: '[static-properties]', insertMethod: 'after'},
+					{name: '[framework-static-methods]', insertAt: '[static-methods]', insertMethod: 'after'},
+					{name: '[framework-lifecycle-methods]', insertAt: 'constructor', insertMethod: 'after'}
 				],
 				{
-					"framework-static-properties": [
-						{"name": "propTypes", "type": "property", "static": true},
-						{"name": "defaultProps", "type": "property", "static": true},
-						{"name": "state", "type": "property", "static": true}
+					'framework-static-properties': [
+						{'name': 'propTypes', 'type': 'property', 'static': true},
+						{'name': 'defaultProps', 'type': 'property', 'static': true},
+						{'name': 'state', 'type': 'property', 'static': true}
 					],
-					"framework-static-methods": [
-						{"name": "getDerivedStateFromProps", "type": "method", "static": true}
+					'framework-static-methods': [
+						{'name': 'getDerivedStateFromProps', 'type': 'method', 'static': true}
 					],
-					"framework-lifecycle-methods": [
-						{"name": "componentWillMount", "type": "method"},
-						{"name": "UNSAFE_componentWillMount", "type": "method"},
-						{"name": "componentDidMount", "type": "method"},
-						{"name": "componentWillReceiveProps", "type": "method"},
-						{"name": "UNSAFE_componentWillReceiveProps", "type": "method"},
-						{"name": "shouldComponentUpdate", "type": "method"},
-						{"name": "componentWillUpdate", "type": "method"},
-						{"name": "UNSAFE_componentWillUpdate", "type": "method"},
-						{"name": "getSnapshotBeforeUpdate", "type": "method"},
-						{"name": "componentDidUpdate", "type": "method"},
-						{"name": "componentDidCatch", "type": "method"},
-						{"name": "componentWillUnmount", "type": "method"}
+					'framework-lifecycle-methods': [
+						{'name': 'componentWillMount', 'type': 'method'},
+						{'name': 'UNSAFE_componentWillMount', 'type': 'method'},
+						{'name': 'componentDidMount', 'type': 'method'},
+						{'name': 'componentWillReceiveProps', 'type': 'method'},
+						{'name': 'UNSAFE_componentWillReceiveProps', 'type': 'method'},
+						{'name': 'shouldComponentUpdate', 'type': 'method'},
+						{'name': 'componentWillUpdate', 'type': 'method'},
+						{'name': 'UNSAFE_componentWillUpdate', 'type': 'method'},
+						{'name': 'getSnapshotBeforeUpdate', 'type': 'method'},
+						{'name': 'componentDidUpdate', 'type': 'method'},
+						{'name': 'componentDidCatch', 'type': 'method'},
+						{'name': 'componentWillUnmount', 'type': 'method'}
 					]
 				}
 			)

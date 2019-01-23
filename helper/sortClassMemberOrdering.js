@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function sortClassMemberOrdering(additionalOrder = [], additionalGroups = {}) {
+module.exports = function(additionalOrder = [], additionalGroups = {}) {
 	const
 		defaultOrder = [
 			'[static-properties]',
@@ -23,10 +23,7 @@ module.exports = function sortClassMemberOrdering(additionalOrder = [], addition
 			'event-handlers-public': [{'name': '/[on|handle].+/', 'type': 'method'}],
 			'event-handlers-private': [{'name': '/_[on|handle].+/', 'type': 'method'}]
 		},
-		groups = {...defaultGroups, ...additionalGroups}
-	;
-
-	let
+		groups = Object.assign({}, defaultGroups, additionalGroups),
 		order = defaultOrder
 	;
 
