@@ -1,7 +1,7 @@
 'use strict';
 
 const
-	sortClassMemberOrdering = require('./helper/sortClassMemberOrdering')
+	{CLASS_MEMBER_GROUPS, CLASS_MEMBER_ORDER} = require('./defaults/sort-class-members')
 ;
 
 module.exports = {
@@ -298,6 +298,9 @@ module.exports = {
 		// 'vars-on-top': 'off',
 		'wrap-regex': 'error',
 		'yield-star-spacing': 'error',
-		'sort-class-members/sort-class-members': [2, sortClassMemberOrdering()]
+		'sort-class-members/sort-class-members': [2, {
+			order: CLASS_MEMBER_ORDER,
+			groups: CLASS_MEMBER_GROUPS
+		}]
 	}
 };
