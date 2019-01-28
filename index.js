@@ -1,8 +1,15 @@
 'use strict';
 
+const
+	{CLASS_MEMBER_GROUPS, CLASS_MEMBER_ORDER} = require('./defaults/sort-class-members')
+;
+
 module.exports = {
 	extends: [
 		'eslint:recommended'
+	],
+	plugins: [
+		'sort-class-members'
 	],
 	rules: {
 		'accessor-pairs': 'error',
@@ -290,6 +297,10 @@ module.exports = {
 		],
 		// 'vars-on-top': 'off',
 		'wrap-regex': 'error',
-		'yield-star-spacing': 'error'
+		'yield-star-spacing': 'error',
+		'sort-class-members/sort-class-members': [2, {
+			order: CLASS_MEMBER_ORDER,
+			groups: CLASS_MEMBER_GROUPS
+		}]
 	}
 };
