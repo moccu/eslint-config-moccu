@@ -32,12 +32,14 @@ rules.
 
 This is a customized ruleset based on the [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react)
 rules.
+Separately there is a ruleset for proptypes-validation in `@moccu/eslint-config/react-proptypes`.
 
 ```js
 {
 	"extends": [
 		"@moccu/eslint-config",
-		"@moccu/eslint-config/react"
+		"@moccu/eslint-config/react",
+		"@moccu/eslint-config/react-proptypes"
 	],
 	"rules": {
 		// Additional rules...
