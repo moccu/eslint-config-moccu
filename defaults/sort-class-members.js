@@ -26,6 +26,6 @@ module.exports.CLASS_MEMBER_ORDER = new List(
 module.exports.CLASS_MEMBER_GROUPS = {
 	'accessor-pairs-public': [{'name': '/[a-z].+/', 'accessorPair': true}],
 	'accessor-pairs-private': [{'name': '/_.+/', 'accessorPair': true}],
-	'event-handlers-public': [{'name': '/[on|handle].+/', 'type': 'method'}],
-	'event-handlers-private': [{'name': '/_[on|handle].+/', 'type': 'method'}]
+	'event-handlers-public': [{'name': '/(on|handle).+/', 'type': 'method'}],
+	'event-handlers-private': [{'name': '/_(on|handle).+/', 'type': 'method'}]
 };
