@@ -54,8 +54,7 @@ module.exports = {
 			groups: Object.assign({}, CLASS_MEMBER_GROUPS, {
 				'framework-static-properties': [
 					{'name': 'propTypes', 'type': 'property', 'static': true},
-					{'name': 'defaultProps', 'type': 'property', 'static': true},
-					{'name': 'state', 'type': 'property', 'static': true}
+					{'name': 'defaultProps', 'type': 'property', 'static': true}
 				],
 				'framework-static-methods': [
 					{'name': 'getDerivedStateFromProps', 'type': 'method', 'static': true}
