@@ -1,5 +1,6 @@
 'use strict';
 
+
 const
 	{List} = require('../helper')
 ;
@@ -21,7 +22,6 @@ module.exports.CLASS_MEMBER_ORDER = new List(
 	'[event-handlers-public]',
 	'[event-handlers-private]'
 );
-
 
 module.exports.CLASS_MEMBER_GROUPS = {
 	'accessor-pairs-public': [{'name': '/[a-z].+/', 'accessorPair': true}],
