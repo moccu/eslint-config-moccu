@@ -50,7 +50,7 @@ module.exports = {
 			order: CLASS_MEMBER_ORDER
 				.insert('[framework-static-properties]').after('[static-properties]')
 				.insert('[framework-static-methods]').after('[static-methods]')
-				.insert('[framework-lifecycle-methods]').after('constructor'),
+				.insert('[framework-lifecycle-methods]').before('render'),
 			groups: Object.assign({}, CLASS_MEMBER_GROUPS, {
 				'framework-static-properties': [
 					{'name': 'propTypes', 'type': 'property', 'static': true},
