@@ -33,7 +33,7 @@
     "hint"
   ],
   "devDependencies": {
-    "chalk": "^2.4.1",
+    "chalk": "^4.1.1",
     "deepmerge": "^2.1.1",
     "eslint": "^5.12.1",
     "eslint-plugin-react": "^7.12.4",
