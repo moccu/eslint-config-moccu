@@ -1,6 +1,7 @@
 # eslint-config-moccu
 
-[![Build Status](https://travis-ci.org/moccu/eslint-config-moccu.svg?branch=master)](https://travis-ci.org/moccu/eslint-config-moccu)
+![Build](https://github.com/moccu/eslint-config-moccu/workflows/Build/badge.svg)
+
 
 The eslint config we use at moccu
 
