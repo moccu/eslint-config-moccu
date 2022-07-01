@@ -35,7 +35,7 @@
   "devDependencies": {
     "chalk": "^4.1.1",
     "deepmerge": "^4.2.2",
-    "eslint": "^7.26.0",
+    "eslint": "^8.18.0",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-sort-class-members": "^1.4.0"
   },
