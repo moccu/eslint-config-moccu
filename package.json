@@ -5,9 +5,6 @@
   "author": "Moccu GmbH & Co. KG",
   "license": "MIT",
   "repository": "moccu/eslint-config-moccu",
-  "engines": {
-    "node": ">=6"
-  },
   "scripts": {
     "test": "node test/index.js"
   },
@@ -34,14 +31,14 @@
   ],
   "devDependencies": {
     "chalk": "^4.1.1",
-    "deepmerge": "^4.2.2",
-    "eslint": "^7.26.0",
-    "eslint-plugin-react": "^7.12.4",
-    "eslint-plugin-sort-class-members": "^1.4.0"
+    "deepmerge": "^4.3.0",
+    "eslint": "^8.35.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-sort-class-members": "^1.20.0"
   },
   "peerDependencies": {
-    "eslint": ">=7.0.0",
-    "eslint-plugin-react": ">=7.12.4",
-    "eslint-plugin-sort-class-members": "^1.4.0"
+    "eslint": ">=8.0.0",
+    "eslint-plugin-react": ">=7.32.2",
+    "eslint-plugin-sort-class-members": "^1.20.0"
   }
 }
