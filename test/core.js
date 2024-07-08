@@ -3,26 +3,9 @@
 (async function() {
 	const
 		assert = require('assert'),
-		chalk = require('chalk'),
-		deepmerge = require('deepmerge'),
 		{ESLint} = require('eslint'),
 		files = ['**/*.js'],
-		eslint = new ESLint({
-			useEslintrc: false,
-			overrideConfig: {
-				env: {
-					'es6': true,
-					'node': true
-				},
-				parserOptions: {
-					'ecmaVersion': 9
-				},
-				...['index', 'react', 'react-proptypes'].reduce(
-					(cfg, name) => deepmerge(cfg, require('../' + name))
-				)
-			}
-		}),
-		results = await eslint.lintFiles(files)
+		configs = ['index', 'react', 'react-proptypes']
 	;
 
 	let
@@ -30,18 +13,34 @@
 		warningCount = 0
 	;
 
-	// Show error report
-	ESLint.getErrorResults(results).forEach((error) => {
-		errorCount += error.errorCount;
-		warningCount += error.warningCount;
-		error.messages.forEach((message) =>
-			console.error(
-				chalk.red(message.message),
-				chalk.white(`(${message.ruleId})`),
-				chalk.white(`\n\t${error.filePath}:${message.line}:${message.column}`)
-			)
-		)
-	});
+	await Promise.all(configs.map(async (name) => {
+		const
+			config = require(`../${name}`),
+			eslint = new ESLint({
+				useEslintrc: false,
+				overrideConfig: {
+					env: {
+						'es6': true,
+						'node': true
+					},
+					parserOptions: {
+						'ecmaVersion': 'latest'
+					},
+					...config
+				}
+			}),
+			results = await eslint.lintFiles(files)
+		;
+
+		// Show error report
+		ESLint.getErrorResults(results).forEach((error) => {
+			errorCount += error.errorCount;
+			warningCount += error.warningCount;
+			error.messages.length && console.log('\n', error.filePath);
+			error.messages.forEach((message) => console.log(`${message.line}:${message.column}`, message.message, message.ruleId));
+			error.messages.length && console.log(`\n${error.errorCount} errors, ${error.warningCount} warnings\n`);
+		});
+	}));
 
 	// Self test
 	assert.equal(errorCount, 0);
