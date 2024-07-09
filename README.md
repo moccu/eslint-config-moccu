@@ -1,6 +1,6 @@
 # eslint-config-moccu
 
-![Build](https://github.com/moccu/eslint-config-moccu/workflows/Build/badge.svg)
+[![Build](https://github.com/moccu/eslint-config-moccu/actions/workflows/build.yml/badge.svg)](https://github.com/moccu/eslint-config-moccu/actions)
 
 
 The eslint config we use at moccu
