@@ -1,11 +1,10 @@
-'use strict';
-
 (async function() {
 	const
 		assert = require('assert'),
 		{ESLint} = require('eslint'),
 		files = ['**/*.js'],
-		configs = ['index', 'react', 'react-proptypes']
+		// configs = ['index', 'react', 'react-proptypes']
+		configs = ['index']
 	;
 
 	let
@@ -14,23 +13,14 @@
 	;
 
 	await Promise.all(configs.map(async (name) => {
-		const
-			config = require(`../${name}`),
-			eslint = new ESLint({
-				useEslintrc: false,
-				overrideConfig: {
-					env: {
-						'es6': true,
-						'node': true
-					},
-					parserOptions: {
-						'ecmaVersion': 'latest'
-					},
-					...config
-				}
-			}),
-			results = await eslint.lintFiles(files)
-		;
+			const
+				plugin = require(`../${name}.js`),
+				eslint = new ESLint({
+					overrideConfigFile: true,
+					overrideConfig: plugin.configs['flat/recommended']
+				}),
+				results = await eslint.lintFiles(files)
+			;
 
 		// Show error report
 		ESLint.getErrorResults(results).forEach((error) => {

@@ -1,5 +1,4 @@
-'use strict';
-
+// @TODO: Add flat config
 
 module.exports = {
 	plugins: [

@@ -1,10 +1,8 @@
-'use strict';
-
+// @TODO: Add flat config
 
 const
 	{CLASS_MEMBER_GROUPS, CLASS_MEMBER_ORDER} = require('./defaults/sort-class-members')
 ;
-
 
 module.exports = {
 	extends: [

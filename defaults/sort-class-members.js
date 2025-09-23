@@ -1,10 +1,6 @@
-'use strict';
-
-
 const
 	{List} = require('../helper')
 ;
-
 
 module.exports.CLASS_MEMBER_ORDER = new List(
 	'[static-properties]',
