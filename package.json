@@ -1,7 +1,7 @@
 {
   "name": "@moccu/eslint-config",
   "description": "The eslint config we use at moccu",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "author": "Moccu GmbH & Co. KG",
   "license": "MIT",
   "repository": "moccu/eslint-config-moccu",
@@ -33,9 +33,9 @@
     "eslint": "^10.6.0"
   },
   "dependencies": {
-		"@eslint/js": "^10.0.1",
-		"eslint-plugin-sort-class-members": "^1.22.1",
-		"globals": "^17.7.0"
+    "@eslint/js": "^10.0.1",
+    "eslint-plugin-sort-class-members": "^1.22.1",
+    "globals": "^17.7.0"
   },
   "peerDependencies": {
     "eslint": ">=10.0.0"
