@@ -19,7 +19,7 @@ const {defineConfig} = require('eslint/config');
 const moccu = require('@moccu/eslint-config');
 
 module.exports = defineConfig([
-	moccu.configs['flat/recommended'],
+	moccu.configs['recommended'],
 	{
 		rules: {
 			semi: ['warn', 'always']
