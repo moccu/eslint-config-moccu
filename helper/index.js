@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports.List = class extends Array {
 
 	insert(value) {

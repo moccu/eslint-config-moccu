@@ -1,3 +1,5 @@
+'use strict';
+
 const
 	{List} = require('../helper')
 ;

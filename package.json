@@ -30,12 +30,14 @@
     "hint"
   ],
   "devDependencies": {
-    "eslint": "^9.8.0",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-sort-class-members": "^1.20.0"
+    "eslint": "^10.6.0"
+  },
+  "dependencies": {
+		"@eslint/js": "^10.0.1",
+		"eslint-plugin-sort-class-members": "^1.22.1",
+		"globals": "^17.7.0"
   },
   "peerDependencies": {
-    "eslint": ">=8.0.0",
-    "eslint-plugin-sort-class-members": "^1.20.0"
+    "eslint": ">=10.0.0"
   }
 }

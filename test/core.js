@@ -1,9 +1,10 @@
+'use strict';
+
 (async function() {
 	const
 		assert = require('assert'),
 		{ESLint} = require('eslint'),
 		files = ['**/*.js'],
-		// configs = ['index', 'react', 'react-proptypes']
 		configs = ['index']
 	;
 
