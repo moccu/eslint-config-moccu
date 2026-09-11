@@ -18,7 +18,7 @@
 				plugin = require(`../${name}.js`),
 				eslint = new ESLint({
 					overrideConfigFile: true,
-					overrideConfig: plugin.configs['flat/recommended']
+					overrideConfig: plugin.configs.recommended
 				}),
 				results = await eslint.lintFiles(files)
 			;
